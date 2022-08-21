@@ -1,38 +1,79 @@
 {
   "name": "vue-cli-plugin-apollo",
-  "description": "vue-cli-plugin-apollo",
-  "version": "0.0.1",
-  "author": "Vadym <margeslt@gmail.com>",
-  "private": false,
-  "main": "src/index.js",
+  "version": "0.22.2",
+  "description": "vue-cli 3 plugin to add Apollo and GraphQL",
+  "main": "index.js",
+  "types": "./types.d.ts",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "nodemon --exec 'npm run build' --watch graphql-client/src",
+    "build": "yarn build:graphql-client && yarn build:client-addon",
+    "build:graphql-client": "babel graphql-client/src --out-dir graphql-client/dist",
+    "build:client-addon": "cd ./client-addon && yarn build && cd ../",
+    "prepublishOnly": "npm run test && npm run build",
+    "test": "npm run test:eslint && cd ./client-addon npm run lint",
+    "test:eslint": "eslint --ext .js .",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akryum/vue-cli-plugin-apollo.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "apollo",
+    "graphql"
+  ],
+  "author": "Guillaume Chau <guillaume.b.chau@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akryum/vue-cli-plugin-apollo/issues"
+  },
+  "homepage": "https://github.com/Akryum/vue-cli-plugin-apollo#readme",
   "dependencies": {
-    "less": "^2.7.2",
-    "less-loader": "^4.0.5",
-    "style-loader": "^0.18.2",
-    "vue": "^2.3.3",
     "@apollo/client": "3.6.9",
+    "apollo-link-state": "^0.4.2",
+    "chalk": "^4.0.0",
+    "deepmerge": "^4.2.2",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.2",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
     "graphql": "^15.1.0",
+    "graphql-subscriptions": "^1.1.0",
+    "graphql-tag": "^2.10.3",
+    "graphql-tools": "^6.0.9",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
     "subscriptions-transport-ws": "^0.9.16",
-    "apollo-link-state": "^0.4.2"
+    "ts-node": "^8.10.2"
   },
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.0.0",
-    "babel-preset-latest": "^6.0.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "cross-env": "^3.0.0",
-    "css-loader": "^0.28.0",
-    "del": "^3.0.0",
-    "shelljs": "^0.7.7",
-    "vue-loader": "^11.1.4",
-    "vue-template-compiler": "^2.2.1",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0",
-    "standard-version": "^4.0.0",
-    "vue-router": "^2.8.1"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.0.0",
+    "vuepress": "^0.14.8"
   },
-  "license": "MIT"
+  "peerDependencies": {
+    "@vue/cli-shared-utils": "^3.0.0 || ^4.0.0-0",
+    "typescript": ">=2.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=10"
+  }
 }
