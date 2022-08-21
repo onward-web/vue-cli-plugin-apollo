@@ -15,7 +15,8 @@
     "vue": "^2.3.3",
     "@apollo/client": "3.6.9",
     "graphql": "^15.1.0",
-    "subscriptions-transport-ws": "^0.9.16"
+    "subscriptions-transport-ws": "^0.9.16",
+    "apollo-link-state": "^0.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
