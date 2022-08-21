@@ -14,10 +14,6 @@ vue add apollo
 An example `ApolloExample.vue` component alongside some GraphQL query files will be added into your sources if you chose to include the examples.
 :::
 
-Start your app:
-
-```
-npm run serve
 ```
 
 [Recommended VS Code extension](https://github.com/prismagraphql/vscode-graphql)

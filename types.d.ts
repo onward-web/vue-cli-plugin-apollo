@@ -1,9 +1,9 @@
 declare module 'vue-cli-plugin-apollo/graphql-client' {
-  import { ApolloClient, ApolloClientOptions, Resolvers } from 'apollo-client'
-  import { DocumentNode } from 'apollo-link'
+  import { ApolloClient, ApolloClientOptions, Resolvers} from '@apollo/client/core';
+  import { DocumentNode } from '@apollo/client/link/core'
   import { SubscriptionClient } from 'subscriptions-transport-ws'
   import { ClientStateConfig } from 'apollo-link-state'
-  import { InMemoryCacheConfig } from 'apollo-cache-inmemory'
+  import { InMemoryCacheConfig } from '@apollo/client/cache'
 
   export interface ApolloClientClientConfig<TCacheShape> {
     // URL to the HTTP API
@@ -45,7 +45,7 @@ declare module 'vue-cli-plugin-apollo/graphql-client' {
   }
 
   export function createApolloClient<TCacheShape>(
-    config: ApolloClientClientConfig<TCacheShape>
+      config: ApolloClientClientConfig<TCacheShape>
   ): {
     apolloClient: ApolloClient<TCacheShape>
     wsClient: SubscriptionClient
@@ -55,60 +55,3 @@ declare module 'vue-cli-plugin-apollo/graphql-client' {
   export function restartWebsockets(wsClient: SubscriptionClient): void
 }
 
-declare module 'vue-cli-plugin-apollo/graphql-server' {
-  // eslint-disable-next-line import/no-duplicates
-  import { Resolvers } from 'apollo-client'
-  import { ContextFunction, Context } from 'apollo-server-core'
-  import { ExpressContext } from 'apollo-server-express/dist/ApolloServer'
-  import { DataSources } from 'apollo-server-core/dist/graphqlOptions'
-  import {
-    ApolloServerExpressConfig,
-    SchemaDirectiveVisitor
-  } from 'apollo-server-express'
-  // eslint-disable-next-line import/no-duplicates
-  import { DocumentNode } from 'apollo-link'
-  import { PubSubEngine } from 'graphql-subscriptions'
-  import { Express } from 'express'
-
-  export interface ApolloServerOption<TContext = Record<string, any>> {
-    host?: string
-    port: number
-    graphqlPath: string
-    subscriptionsPath: string
-    // Enable automatic mocking
-    enableMocks?: boolean
-    // Enable Apollo Engine
-    enableEngine?: boolean
-    engineKey?: string
-    // Base folder for the server source files
-    serverFolder?: string
-    // Cross-Origin options
-    cors?: string
-    // Requests timeout (ms)
-    timeout?: number
-    // Integrated apollo engine
-    integratedEngine?: boolean
-    // For enable typescript server files
-    // if you don't have @vue/cli-plugin-typescript
-    typescript?: boolean
-    // Apollo server options (will be merged with the included default options)
-    serverOptions: ApolloServerExpressConfig
-    quiet?: boolean
-    paths: {
-      typeDefs: string | string[] | DocumentNode | DocumentNode[]
-      resolvers: Resolvers | Resolvers[]
-      context: ContextFunction<ExpressContext, Context> | Context
-      pubsub?: PubSubEngine
-      server?: (app: Express) => void
-      directives: Record<string, typeof SchemaDirectiveVisitor>
-      dataSources?: () => DataSources<TContext>
-    }
-  }
-
-  function ApolloServer<TContext>(
-    options: ApolloServerOption<TContext>,
-    cb?: () => void
-  ): string | string[] | DocumentNode | DocumentNode[]
-
-  export default ApolloServer
-}
