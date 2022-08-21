@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7958fcc2-d535-4da4-8884-9ae90b983988" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/guide/server-prod.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/server-prod.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql-client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql-server/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661064420329</updated>
-      <workItem from="1661064421471" duration="2383000" />
+      <workItem from="1661064421471" duration="2693000" />
     </task>
     <servers />
   </component>
@@ -56,9 +52,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="986" y="433" width="587" height="534" key="find.popup" timestamp="1661066787979">
+    <state x="986" y="433" width="587" height="534" key="find.popup" timestamp="1661066972929">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="986" y="433" width="587" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661066787979" />
+    <state x="986" y="433" width="587" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661066972929" />
   </component>
 </project>
