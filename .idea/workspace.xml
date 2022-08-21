@@ -2,7 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7958fcc2-d535-4da4-8884-9ae90b983988" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/graphql-server/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/public/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/ApolloView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/GraphqlPlayground.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/SimpleGraph.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetrics.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsErrorPercentage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsP95Time.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsQueries.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsQuery.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsRequestRate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/components/widgets/EngineKeyMetricsView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/src/utils/math.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-addon/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/style.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/auth.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/client-state.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/directives.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/env.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/injected-commands.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/manual-changes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/mocks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/webpack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/data-sources.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/directives.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/mocks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/resolvers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/schema.graphql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/default/apollo-server/type-defs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/examples/apollo-server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/examples/apollo-server/utils/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/api-server/examples/apollo-server/utils/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/default/apollo.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/default/src/vue-apollo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/components/ApolloExample.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/AddMessage.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/FileFragment.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/Files.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/HelloWorld.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/MessageAdded.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/MessageFragment.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/Messages.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/vue-apollo/examples/src/graphql/UploadFile.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql-client/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql-client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/engine/key-metrics/error-percentage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/engine/key-metrics/p95-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/operations/engine/key-metrics/request-rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-public/apollo-engine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-public/publish-task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-public/view-tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-public/vue-apollo-graphql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/configs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/views.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/check-schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/engine-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/generate-schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/load-env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/publish-schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +137,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661064420329</updated>
-      <workItem from="1661064421471" duration="2693000" />
+      <workItem from="1661064421471" duration="3833000" />
+      <workItem from="1661070363659" duration="16000" />
+      <workItem from="1661070868887" duration="919000" />
+      <workItem from="1661072567029" duration="1995000" />
+      <workItem from="1661076110396" duration="2307000" />
     </task>
     <servers />
   </component>
@@ -52,9 +149,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="986" y="433" width="587" height="534" key="find.popup" timestamp="1661066972929">
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1661075722126">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="986" y="433" width="587" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661066972929" />
+    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1661075722126" />
+    <state x="986" y="433" width="587" height="534" key="find.popup" timestamp="1661067281128">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="986" y="433" width="587" height="534" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1661067281128" />
   </component>
 </project>
